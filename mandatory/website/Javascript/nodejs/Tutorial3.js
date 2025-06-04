@@ -11,7 +11,7 @@
 // Step 1:import the fs module
 const fs = require('fs'); //fs is the file system module
 const http = require('http'); // http module to create a server
-const moduleExample = require('./Tutorial2.js'); // import my module
+const moduleExample = require('./modules.js'); // import my module
 
 // setup server port and hostname
 const hostname = "127.0.0.1";
@@ -92,9 +92,9 @@ const port = 8000;
             } else {
                 console.log("File renamed successfully");
             }
-        }
+        });
 
-        
+
         // Step 8: response body
 }).listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
